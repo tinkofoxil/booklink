@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Booklink</string>
+    <string name="about_as">About us</string>
+    <string name="book">Books</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="User_name">User name</string>
+    <string name="Back">Back</string>
+    <string name="Camera">Camera</string>
+    <string name="Picture">Picture</string>
+</resources>

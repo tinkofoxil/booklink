@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "876166503291",
+    "firebase_url": "https://library-805f6-default-rtdb.firebaseio.com",
+    "project_id": "library-805f6",
+    "storage_bucket": "library-805f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876166503291:android:5b48fccf9ce8d1da88bbde",
+        "android_client_info": {
+          "package_name": "it.mirea.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876166503291-kedmc58k4bcpft1jdvcgl46m02fs5avu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.mirea.myapplication",
+            "certificate_hash": "6c8ff15f17388185954d8f65979242fa5f1ae28d"
+          }
+        },
+        {
+          "client_id": "876166503291-2q44aroaibtooj0vqlfeqorpis8fcldo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzIfJGHSeKDBYGKt7amLVFRW_lw321f9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876166503291-2q44aroaibtooj0vqlfeqorpis8fcldo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

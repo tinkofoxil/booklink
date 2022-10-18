@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.mirea.myapplication">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_newroundnotext"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_newroundnotext"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".ProfileAuthorActivity"
+            android:label="ProfileAuthor"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".ProfileSupervisorActivity"
+            android:label="ProfileSupervisor"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"            >
+        </activity>
+
+        <activity
+            android:name=".EntryActivity"
+            android:label="Entry"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".BookActivity"
+            android:label="BookDescription"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+
+        <activity
+            android:name=".TextbookActivity"
+            android:label="BookText"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+
+        <activity
+            android:name=".AddBookActivity"
+            android:label="AddBook"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".ViewUsersActivity"
+            android:label="ViewUsers"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".RecyclerDataBaseActivity"
+            android:label="ViewUsers"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+        <activity
+            android:name=".ViewUsersBookActivity"
+            android:label="ViewUsers"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+
+            >
+        </activity>
+
+
+    </application>
+
+</manifest>

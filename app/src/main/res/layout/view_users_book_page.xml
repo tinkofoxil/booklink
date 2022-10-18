@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loading_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bone">
+
+    <Button
+        android:id="@+id/readBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/purple_200"
+        android:onClick="clickRead"
+        android:text="Читать"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookNameOriginal"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/readBook2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@color/purple_200"
+        android:onClick="clickUpload"
+        android:text="Загрузить"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/readBook3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@color/purple_200"
+        android:onClick="clickDelete"
+        android:text="Удалить"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="616dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_books"
+            android:contentDescription="@string/book"
+            android:onClick="ClickMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_books"
+            tools:layout_editor_absoluteY="0dp"
+            tools:srcCompat="@drawable/ic_books" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_gear"
+            android:contentDescription="@string/settings"
+            android:onClick="ClickSettings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_gear"
+            tools:srcCompat="@drawable/ic_gear" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_newroundnotext"
+            android:contentDescription="@string/profile"
+            android:onClick="ClickProfile"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_newroundnotext"
+            tools:srcCompat="@drawable/ic_newroundnotext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/metaInfText"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/changeToDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readBook">
+
+        <EditText
+            android:id="@+id/editBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Название произведения"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Имя автора"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editNumberOfPages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Читается за N минут"
+            android:inputType="textShortMessage"
+            android:textSize="20sp" />
+
+        <com.reginald.editspinner.EditSpinner
+            android:id="@+id/edit_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:hint="Жанр"
+            android:minHeight="48dp"
+            app:dropDownDrawable="@drawable/ic_pencil"
+            app:dropDownDrawableHeight="25dp"
+            app:dropDownDrawableSpacing="15dp"
+            app:dropDownDrawableWidth="25dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bookNameOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <ImageView
+        android:id="@+id/changeToDescription"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_update"
+        android:onClick="changeToDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/metaInfText"
+        app:srcCompat="@drawable/ic_update" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="145dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center_vertical|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bookImg"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:onClick="onEditBookImg"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:srcCompat="@drawable/ic_user"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/editBookImg"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="107dp"
+            android:background="@drawable/ic_pencil"
+            android:onClick="onEditBookImg"
+            app:srcCompat="@drawable/ic_pencil"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

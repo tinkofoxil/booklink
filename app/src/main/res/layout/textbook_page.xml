@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bone">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollY="@dimen/cardview_default_radius"
+        app:layout_constraintBottom_toTopOf="@id/constraintLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="inherit"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_books"
+            android:contentDescription="@string/book"
+            android:onClick="ClickMain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_books"
+            tools:srcCompat="@drawable/ic_books" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_gear"
+            android:contentDescription="@string/settings"
+            android:onClick="ClickSettings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:srcCompat="@drawable/ic_gear"
+            tools:srcCompat="@drawable/ic_gear" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_newroundnotext"
+            android:contentDescription="@string/profile"
+            android:onClick="ClickProfile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_newroundnotext"
+            tools:srcCompat="@drawable/ic_newroundnotext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
